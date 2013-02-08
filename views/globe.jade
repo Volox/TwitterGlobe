@@ -1,0 +1,25 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/styleGlobe.css')
+    
+    script(src='http://code.jquery.com/jquery-1.9.1.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/javascripts/bootstrap.min.js')
+    
+    script(src='/globe/third-party/Three/ThreeWebGL.js')
+    script(src='/globe/third-party/Three/ThreeExtras.js')
+    script(src='/globe/third-party/Three/RequestAnimationFrame.js')
+    script(src='/globe/third-party/Three/Detector.js')
+    script(src='/globe/globe.js')
+
+    script(src='/javascripts/mioGlobe.js')
+  body
+    .container-fluid
+      .row-fluid
+        .span3#tweetList
+          ul.media-list#tweets
+        .span9
+          #container(data-spy="affix", data-offset-top="0")
